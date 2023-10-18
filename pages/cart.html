@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- bootstrap Links CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- font awesome links -->
+    <script src="https://kit.fontawesome.com/dbf2267c0b.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+   -->
+    <!-- owl carousel CDN Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+   
+</head>
+<body>
+    
+    <header>
+        <nav class="nav">
+            <i class="fa-solid fa-bars navOpenBtn"></i>
+            <a href="#" class="logo">Foot<span style="color: #e3a51e;">Zone</span></a>
+            <ul class="nav-links">
+                <i class="fa-solid fa-circle-xmark navCloseBtn"></i>
+             
+              <li><a href="#">Home</a></li>
+              <li><a href="../pages/productDetails.html">Kids Wear</a></li>
+              <li><a href="../pages/productDetails.html">OutDoor Shoes</a></li>
+              <li><a href="../pages/productDetails.html">Top Brands</a></li>
+              <li><a href="../pages/productDetails.html">Fashion Shoes</a></li>
+            </ul>
+            
+
+            <div>
+              <i class="fa-solid fa-bag-shopping shopping-bag"></i>
+              <i class="fa-regular fa-user user"></i>
+              <i class="fa-solid fa-magnifying-glass search-icon" id="searchIcon"></i>
+            </div>
+            <div class="search-box">
+                
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input type="text" placeholder="Search here..." />
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="sec-banner">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Products</a></li>
+                  <li class="breadcrumb-item"><a href="#">Single Product</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                </ol>
+              </nav>
+            </div>
+        </section>
+        <div class="container">
+              <div class="row py-5">
+                <div class="col-md-7">
+                    <h4>Products</h4>
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table">
+                           
+                            <tbody>
+                            <tr class="align-middle">
+                                <td><img class="img-product" src="../images/product-2.jpg"></td>
+                                <td>
+                                    <div>
+                                        <h6 class="product_name">Product Name</h6>
+                                        <p class="Brand_name">Brand Name</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="btn-minus"><span class="fa fa-minus" aria-hidden="true"></span></div>
+                                        <input value="1">
+                                        <div class="btn-plus"><span class="fa fa-plus" aria-hidden="true"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col">₹ 44.00 </div>
+                                </td>
+                                <td>
+                                    <div class="close">&#10005;</div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><img class="img-product" src="../images/product-1.jpg"></td>
+                                <td>
+                                    <div>
+                                        <h6 class="product_name">Product Name</h6>
+                                        <p class="Brand_name">Brand Name</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="btn-minus"><span class="fa fa-minus" aria-hidden="true"></span></div>
+                                        <input value="1">
+                                        <div class="btn-plus"><span class="fa fa-plus" aria-hidden="true"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="col">₹ 44.00 </div>
+                                </td>
+                                <td>
+                                    <div class="close"><a href="">&#10005;</a></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="summery">
+                        <h4>Order Summary</h4>
+                        <hr>
+                        
+                        <form>
+                            <div class="form-group">
+                            <p class="input-lable">Apply Coupon</p>
+                            <input id="code" placeholder="Enter your code">
+                            </div>
+                        </form>
+                        
+                        <div class="total" >
+                            <h6 class="total-title">Cart Total</h6>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody><tr>
+                                        <td>Sub Total</td>
+                                        <td>₹230</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping</td>
+                                        <td>₹70</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>Total</td>
+                                        <td class="total-amount">₹300</td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">CHECKOUT</button>
+                    </div>
+                </div>
+              </div>  
+        </div>
+
+        
+    </main>
+    <footer class="footer-section">
+      <div class="container">
+      
+          <div class="footer-content pt-5 pb-5">
+              <div class="row">
+                 
+                  <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                      <div class="footer-widget">
+                          <div class="footer-widget-heading">
+                              <h3>Categories</h3>
+                          </div>
+                          <ul>
+                              <li><a href="#">Mens Shoes</a></li>
+                              <li><a href="#">Womans Shoes</a></li>
+                              <li><a href="#">Sport Shoes</a></li>
+                              <li><a href="#">Casual Shoes</a></li>
+                              <li><a href="#">Kids Wear</a></li>
+                             
+                           
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Information</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">View All</a></li>
+                         
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">  
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Quick Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#">Store Location</a></li>
+                          <li><a href="#">My Account</a></li>
+                          <li><a href="#">Order Tracking</a></li>
+                          <li><a href="#">Size Quide</a></li>
+                          <li><a href="#">Shopping Rates</a></li>
+                         
+                       
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 mb-30">  
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Contact US</h3>
+                      </div>
+                      <ul>
+                          <li><a href="#"> <i class="fa-solid fa-location-dot"></i> 184 Main Rd E, India</a></li>
+                          <li><a href="#"><i class="fa-regular fa-envelope"></i> abc@gmail.com</a></li>
+                          <li><a href="#"> <i class="fa-solid fa-phone"></i> 1234567890</a></li>
+                          
+                         
+                       
+                      </ul>
+                  </div>
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+                </div>
+              </div>
+          </div>
+          
+          </div>
+      </div>
+      
+      <div class="copyright-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                      <div class="copyright-text">
+                          <p>Copyright &copy; 2023, All Right Reserved <a href="">ABC Corp</a></p>
+                      </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                      <div class="footer-menu">
+                          <ul>
+                              
+                              <li><a href="#">Terms</a></li>
+                              <li><a href="#">Privacy</a></li>
+                              <li><a href="#">Policy</a></li>
+                              
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+
+    <script src="../Js/index.js"></script>
+    <!-- bootstrap Js links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+  
+    
+</body>
+</html>
